@@ -5,7 +5,7 @@ This library was created by .Net 7.0
 ## Install
 
 ```bash
-dotnet add package EntityFrameworkCorePagination.Nuget --version 1.0.0
+dotnet add package EntityFrameworkCorePagination.Nuget --version 1.0.1
 ```
 
 ## Use

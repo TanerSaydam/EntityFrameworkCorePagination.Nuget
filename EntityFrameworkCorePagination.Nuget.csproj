@@ -9,7 +9,20 @@
     <Version>1.0.1</Version>
     <Authors>Taner Saydam</Authors>
     <Company>Taner Saydam</Company>
+    <Copyright>Copyright 2023</Copyright>
+    <RepositoryUrl>https://github.com/TanerSaydam/EntityFrameworkCorePagination.Nuget</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>pagination entityframeworkcore</PackageTags>
+    <PackageReleaseNotes>Fixed Readme</PackageReleaseNotes>
+    <PackageIcon>Actions-media-seek-forward-icon.png</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Users\taner\OneDrive\Masaüstü\Actions-media-seek-forward-icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
