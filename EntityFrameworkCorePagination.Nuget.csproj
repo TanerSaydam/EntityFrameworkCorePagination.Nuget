@@ -15,6 +15,7 @@
     <PackageTags>pagination entityframeworkcore</PackageTags>
     <PackageReleaseNotes>Fixed Readme</PackageReleaseNotes>
     <PackageIcon>Actions-media-seek-forward-icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,6 +27,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
