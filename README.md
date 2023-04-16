@@ -5,7 +5,7 @@ This library was created by .Net 7.0
 ## Install
 
 ```bash
-dotnet add package EntityFrameworkCorePagination.Nuget --version 1.0.1
+dotnet add package EntityFrameworkCorePagination.Nuget --version 1.0.3
 ```
 
 ## Use
@@ -45,14 +45,17 @@ public static class PagesListQuerableExtensions
         public static async Task<PaginationResult<T>> ToPagedListAsync<T>(
             this IQueryable<T> source,
             int pageNumber,
-            int pageSize)
+            int pageSize,
+            CancellationToken cancellationToken = default)
+            where T : class
         {
             var count = await source.CountAsync();
             if(count>0) { 
             var items = await source
                 .Skip((pageNumber-1) * pageSize)
                 .Take(pageSize)
-                .ToListAsync();
+                .AsNoTracking()
+                .ToListAsync(cancellationToken);
 
             return new(items,pageNumber, pageSize,count);
             }

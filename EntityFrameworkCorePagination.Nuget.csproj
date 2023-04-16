@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Entity Framework Core Generic Pagination</Title>
-    <Version>1.0.1</Version>
+    <Version>1.0.3</Version>
     <Authors>Taner Saydam</Authors>
     <Company>Taner Saydam</Company>
     <Copyright>Copyright 2023</Copyright>
@@ -14,19 +14,22 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>pagination entityframeworkcore</PackageTags>
     <PackageReleaseNotes>Fixed Readme</PackageReleaseNotes>
-    <PackageIcon>Actions-media-seek-forward-icon.png</PackageIcon>
+    <PackageIcon>pagination-icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Description>With this package you can paginate all your list.</Description>
+    <AssemblyVersion>1.0.3</AssemblyVersion>
+    <FileVersion>1.0.3</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\Users\taner\OneDrive\Masaüstü\Actions-media-seek-forward-icon.png">
+    <None Include="..\..\pagination-icon.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
   </ItemGroup>
 
   <ItemGroup>
