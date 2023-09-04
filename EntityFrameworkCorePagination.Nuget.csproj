@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Entity Framework Core Generic Pagination</Title>
-    <Version>1.0.3</Version>
+    <Version>7.0.5</Version>
     <Authors>Taner Saydam</Authors>
     <Company>Taner Saydam</Company>
     <Copyright>Copyright 2023</Copyright>
@@ -14,15 +14,16 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>pagination entityframeworkcore</PackageTags>
     <PackageReleaseNotes>Fixed Readme</PackageReleaseNotes>
-    <PackageIcon>pagination-icon.png</PackageIcon>
+    <PackageIcon>icon.jpeg</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Description>With this package you can paginate all your list.</Description>
     <AssemblyVersion>1.0.3</AssemblyVersion>
     <FileVersion>1.0.3</FileVersion>
+    <PackageId>EntityFrameworkCore.Pagination</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\pagination-icon.png">
+    <None Include="..\..\icon.jpeg">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>

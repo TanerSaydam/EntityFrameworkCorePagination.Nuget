@@ -7,7 +7,7 @@ public class PaginationResult<T>
         Datas = datas;
         PageNumber = pageNumber;
         PageSize = pageSize;
-        TotalPages = (int)Math.Ceiling(totalCount / (double)pageSize);
+        TotalPages = (totalCount + pageSize) > 0 ? (int)Math.Ceiling(totalCount / (double)pageSize) : 0;
         IsFirstPage = PageNumber == 1;
         IsLastPage = PageNumber == TotalPages;
     }
